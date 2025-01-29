@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schilderijen Galerij</title>
+    <link rel="stylesheet" href="kunstwerk.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="home">HOME PAGE</a>
+            <a href="ticketpage/ticket.html" class="tickets">TICKETS</a>
+            <a href="kunstwerkpage/kunstwerk.html" class="schilderijen">SCHILDERIJEN</a>
+           
+            <div class="dropdown">
+                <button class="dropbtn">Meer ▾</button>
+                <div class="dropdown-content">
+                    <a href="kunstwerk.html">schilderijen</a>
+                    <a href="kunstwerk.html">Schilderijen</a>
+                    <a href="https://www.boijmans.nl/">Boijmans</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="kunst-grid">
+        
+        <div class="kunst" onclick="showInfo('The Old Guitarist')">
+            <img src="kunstwerk/photo1.jpg" alt="The Old Guitarist">
+        </div>
+        <div class="kunst" onclick="showInfo('The Weeping Woman')">
+            <img src="kunstwerk/photo2.jpg" alt="The Weeping Woman">
+        </div>
+        <div class="kunst" onclick="showInfo('Le Rêve')">
+            <img src="kunstwerk/photo3.jpg" alt="Le Rêve">
+        </div>
+        <div class="kunst" onclick="showInfo('Dove')">
+            <img src="kunstwerk/dove.jpg" alt="Dove">
+        </div>
+        <div class="kunst" onclick="showInfo('Girl Before a Mirror')">
+            <img src="kunstwerk/photo5.jpg" alt="Girl Before a Mirror">
+        </div>
+    </div>
+    
+    <div id="kunst-grid">
+       
+        <div class="kunst" onclick="showInfo('The Kiss')">
+            <img src="kunstwerk/photo6.jpeg" alt="The Kiss">
+        </div>
+        <div class="kunst" onclick="showInfo('Portrait of Dora Maar')">
+            <img src="kunstwerk/photo7.jpg" alt="Portrait of Dora Maar">
+        </div>
+        <div class="kunst" onclick="showInfo('Bulls Head')">
+            <img src="kunstwerk/photo8.jpg" alt="Bull's Head">
+        </div>
+        <div class="kunst" onclick="showInfo('Don Quixote')">
+            <img src="kunstwerk/photo9.jpg" alt="Don Quixote">
+        </div>
+        <div class="kunst" onclick="showInfo('Woman with Flower')">
+            <img src="kunstwerk/photo10.jpg" alt="Woman with Flower">
+        </div>
+    </div>
+    
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="paintingTitle"></h2>
+            <p id="paintingDescription"></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <a href="link1.html" class="footer-icon">
+                <img src="kunstwerk/facebook.png" alt="Facebook">
+            </a>
+            <a href="link2.html" class="footer-icon">
+                <img src="kunstwerk/xtwitter.avif" alt="Twitter">
+            </a>
+            <a href="link3.html" class="footer-icon">
+                <img src="kunstwerk/instagram.webp" alt="Instagram">
+            </a>
+            <a href="link4.html" class="footer-icon">
+                <img src="kunstwerk/youtube2.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2025 Pablo Picasso museum Website.</p>
+            <p><a href="contact.html" class="footer-link">Neem contact op</a></p>
+        </div>
+    </footer>
+   
+
+    <script src="kunstwerk.js"></script>
+</body>
+</html>
